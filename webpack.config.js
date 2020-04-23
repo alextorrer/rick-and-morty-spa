@@ -3,7 +3,7 @@ const path = require('path'); //Nos permite acceder a donde estamos en las carpe
 const HtmlWebpackPlugin = require('html-webpack-plugin'); //Archivo necesario para trabajar con HTML.
 
 module.exports = { //Aqui se tiene toda la configuración de lo que va a suceder. Modulo para exportar.
-    entry: '.src/index.js', //Punto de entrada, ahi vive el código inicial
+    entry: './src/index.js', //Punto de entrada, ahi vive el código inicial
     output: { //A donde se va a mandar el proyecto ya compilado listo para producción
         path: path.resolve(__dirname, 'dist'), //Hacia donde se va a enviar. Resolve es para saber donde se encuentra. __dirname para crear una carpeta 'dist' cuando sepa donde se encuentre.
         filename: 'main.js', //Archivo listo para producción
