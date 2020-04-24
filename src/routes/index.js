@@ -21,7 +21,7 @@ const router = async () => { //Hacerla async (promesa) para no retrasar la carga
     let hash = getHash();
     let route = await resolveRoutes(hash); //await porque puede tardar
     let render = routes[route] ? routes[route] : Error404;    //bracket notation, es obtener routes.'/' pero con una clave dinámica
-    content.innerHTML = await render(); //se ejecuta render porque sus posibles valores son funciones
+    content.innerHTML = await render(); //se ejecuta render porque sus posibles valores son funciones (promesas)
 };
 
 export default router;
